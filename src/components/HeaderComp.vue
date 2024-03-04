@@ -26,7 +26,7 @@ function closeDropdown(event) {
 <template>
     <nav class="navHeader">
         <div>
-            <img src="" alt="logo">
+            <img src="" alt="logo" @click="router.push('/')">
         </div>
         <div ref="dropdown">
             <button ref="buttonList" id="buttonList" @click="toggleDropdown">waos</button>
