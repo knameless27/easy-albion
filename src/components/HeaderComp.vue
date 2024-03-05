@@ -56,6 +56,10 @@ function closeDropdown(event) {
     background-color: rebeccapurple;
 }
 
+.navHeader img {
+    cursor: pointer;
+}
+
 .listItems {
     list-style: none;
     position: absolute;

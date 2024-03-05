@@ -1,0 +1,9 @@
+.default-calc-layout {
+    display: block;
+    max-width: 1300px;
+    /* justify-content: space-between; */
+}
+
+h1, h2, h3 {
+    text-align: center;
+}

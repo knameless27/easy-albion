@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-// eslint-disable-next-line
+import { defineProps } from 'vue'
 const props = defineProps({
     image: {
         type: String,
