@@ -26,14 +26,14 @@ function closeDropdown(event) {
 <template>
     <nav class="navHeader">
         <div>
-            <img src="" alt="logo" @click="router.push('/')">
+            <img src="" alt="logo" @click="router.push({ name: 'home' })">
         </div>
         <div ref="dropdown">
             <button ref="buttonList" id="buttonList" @click="toggleDropdown">waos</button>
             <Transition name="slide-fade">
                 <div v-if="seeItems" class="listItems">
-                    <div v-for="({ name , available, url}, index) in views" :key="index">
-                        <p v-if="available" @click="router.push(url)">{{ name }}</p>
+                    <div v-for="({ name, available, url }, index) in views" :key="index">
+                        <p v-if="available" @click="router.push({ name: url })">{{ name }}</p>
                     </div>
                 </div>
             </Transition>

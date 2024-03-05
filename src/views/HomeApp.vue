@@ -19,7 +19,7 @@ const router = useRouter()
 // import albionApi from "@/services/albionApi"
 // console.log(albionApi.getItems().filter((item) => /SWORD/.test(item.UniqueName)))
 const goPage = (url) => {
-    router.push(url)
+    router.push({name: url})
 }
 </script>
 
